@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="<
-        <meta name="google-site-verification" content="BemwxT0h5CiBmpCKeMifH6B9HrJr8kEXOxJrkKBP6hE" />
+    <meta name="google-site-verification" content="P2MjeJabCgcpRaQJ10bhzF6MI0Rqhre44sHGdgYZreY" />
     <title>The Foodie Hub - Trial Menu</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -103,7 +102,7 @@
 
 <script>
 function sendOrder() {
-    var phoneNumber = "923123103603"; // <--- YAHAN APNA NUMBER DAALEIN
+    var phoneNumber = "923123103603"; 
     var name = document.getElementById('customer-name').value;
     var order = document.getElementById('customer-order').value;
     var address = document.getElementById('customer-address').value;
@@ -113,18 +112,18 @@ function sendOrder() {
         return;
     }
 
-    var message = "*🔥 NEW TRIAL ORDER!* \n\n" + 
+    var message = "*🔥 NEW TRIAL ORDER!*" + "\n\n" + 
                   "👤 *Customer Name:* " + name + "\n" + 
                   "🍔 *Items Ordered:* " + order + "\n" + 
                   "📍 *Delivery Address:* " + address + "\n\n" + 
-                  "---\n" + 
+                  "---" + "\n" + 
                   "💻 _Sent via my trial website project!_";
 
     var whatsappUrl = "https://wa.me" + phoneNumber + "?text=" + encodeURIComponent(message);
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_top');
 }
 </script>
 
 </body>
-  </html>
-      
+                </html>
+                
